@@ -1,3 +1,9 @@
+import { UserButton } from '@clerk/nextjs'
+
 export default function Home() {
-  return <p className="text-2xl font-bold ">This is protected page</p>
+  return (
+    <div>
+      <UserButton />
+    </div>
+  )
 }
