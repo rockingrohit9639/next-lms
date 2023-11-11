@@ -4,7 +4,7 @@ import Sidebar from './_components/sidebar'
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="h-full">
-      <div className="fixed inset-y-0 h-16 w-full md:pl-56">
+      <div className="fixed inset-y-0 z-50 h-16 w-full md:pl-56">
         <Navbar />
       </div>
 
