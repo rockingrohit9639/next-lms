@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation'
 import { getChapter } from '@/actions/get-chapter'
 import Banner from '@/components/banner'
 import VideoPlayer from './_components/video-player'
-import CourseEnrollButton from './_components/course-entroll-button'
+import CourseEnrollButton from './_components/course-enroll-button'
 import { Separator } from '@/components/ui/separator'
 import Preview from '@/components/preview'
 
@@ -58,7 +58,7 @@ export default async function ChapterDetails({ params }: { params: { courseId: s
           {attachments.length ? (
             <>
               <Separator />
-              <div>
+              <div className="p-4">
                 {attachments.map((attachment) => (
                   <a
                     className="flex w-full items-center rounded-md border bg-sky-200 p-3 text-sky-700 hover:underline"
